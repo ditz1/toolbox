@@ -9,7 +9,7 @@ import argparse
 
 ### SET CONFIG HERE ###
 compiler = "gcc"
-compiler_flags = ["-std=c++11", "-I./include"]
+compiler_flags = ["-std=c++17", "-I./include"]
 linker_flags = ["-lstdc++"]
 executable_name = "g"
 #######################

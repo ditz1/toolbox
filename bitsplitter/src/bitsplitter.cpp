@@ -1,28 +1,19 @@
-#include "../include/bitsplitter.hpp"
+#include "bitsplitter.hpp"
+#include <iostream>
+#include <bitset>
 
-// generic function to split float into 4 bytes
-std::vector<int8_t> ToInt8s(float f){
-    std::vector<int8_t> asbits;
-    FloatAndBits fb;
-    fb.f = f;
-    asbits.push_back(fb.bits.b0);
-    asbits.push_back(fb.bits.b1);
-    asbits.push_back(fb.bits.b2);
-    asbits.push_back(fb.bits.b3);
-    
-    return {asbits};
+// Function to print bits
+void PrintBits(const std::vector<int8_t>& bits) {
+    for (size_t i = 0; i < bits.size(); ++i) {  // Iterate over each bit
+        std::cout << std::bitset<8>(bits[i]) << " ";  // Print the bit as a bitset
+    }
+    std::cout << std::endl;  // Print a newline character
 }
 
-void PrintBits(std::vector<int8_t> bits){
-    for (auto b : bits){
-        std::cout << std::bitset<8>(b) << " ";
+// Function to print bits in hexadecimal format
+void HexPrintBits(const std::vector<int8_t>& bits) {
+    for (auto b : bits) {  // Iterate over each bit
+        printf("0x%02x ", static_cast<unsigned int>(b));  // Print the bit in hexadecimal format
     }
-    std::cout << std::endl;
-}
-
-void hexPrintBits(std::vector<int8_t> bits){
-    for (auto b : bits){
-        printf("0x%x ", b); // for some reason std::hex breaks with this
-    }
-    std::cout << std::endl;
+    std::cout << std::endl;  // Print a newline character
 }
