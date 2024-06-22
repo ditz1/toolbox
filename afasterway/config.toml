@@ -1,0 +1,28 @@
+[global]
+num_entries = 150
+
+
+[[entry]]
+group = "A"
+another_group = "Z"
+value = 250.0
+
+[[entry]]
+group = "B"
+another_group = "X"
+value = 210.0
+
+[[entry]]
+group = "X"
+another_group = "U"
+value = 200.0
+
+[[entry]]
+group = "X"
+another_group = "U"
+value = 200.0
+
+[[entry]]
+group = "X"
+another_group = "U"
+value = 200.0
