@@ -1,0 +1,31 @@
+# global variables
+[global]
+global_variable0 = 150
+global_variable1 = 150
+global_variable2 = 150
+
+# some other structs or something
+[[entry]]
+group = "A"
+another_group = "Z"
+value = 250.0
+
+[[entry]]
+group = "B"
+another_group = "X"
+value = 0
+
+[[entry]]
+group = "X"
+another_group = "U"
+value = 50000.0
+
+[[entry]]
+group = "X"
+another_group = "U"
+value = 200.0
+
+[[entry]]
+group = "X"
+another_group = "U"
+value = 200.0
