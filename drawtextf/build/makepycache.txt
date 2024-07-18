@@ -1,0 +1,5 @@
+src\main.cpp:7d4e7af8534f466121d50a7f41352112
+include\raygui.h:bf2a68ceced1d2341b3a8cf2043482b2
+include\raylib.h:e3195369d96142ca112aa1033701b7c4
+include\raymath.h:4080149f1571049444275bd73a00151d
+include\drawtextf.hpp:8dfab528fbc81e1e6de959d4ec697284
